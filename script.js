@@ -5,7 +5,7 @@ const first = document.getElementById("btn1").innerHTML;
 const second = document.getElementById("btn2").innerHTML;
 const third = document.getElementById("btn3").innerHTML;
 
-function displayMessage(buttonId, randomBtn) {
+function displayMessage(buttonId) {
     if (buttonId == "Button " + randomBtn) {
         document.getElementById("Initial-text").innerHTML="You win!";
     } else {
