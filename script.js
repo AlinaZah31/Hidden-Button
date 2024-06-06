@@ -1,12 +1,7 @@
-const results = ["1", "2", "3"];
-const randomPos = Math.floor(Math.random() * results.length);
-const randomBtn = results[randomPos];
-const first = document.getElementById("btn1").innerHTML;
-const second = document.getElementById("btn2").innerHTML;
-const third = document.getElementById("btn3").innerHTML;
+const randomBtn = Math.floor(Math.random() * ["1", "2", "3"].length) + 1; // +1, because it will save the position from the array, meaning 0, 1 or 2
 
 function displayMessage(buttonId) {
-    if (buttonId == "Button " + randomBtn) {
+    if (buttonId == randomBtn) {
         document.getElementById("Initial-text").innerHTML="You win!";
     } else {
         document.getElementById("Initial-text").innerHTML= "You lose!";
